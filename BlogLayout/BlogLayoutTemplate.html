@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News Log Layout</title> <!-- Name the News aapp -->
+  <link rel="stylesheet" type ="text/css" href="2ColumnLayoutLess600pxOnTop.css" media="screen"/>
+</head>
+<body>
+<div class="header">
+  <h2>News log Name</h2>
+</div>
+
+<!-- From here is the News layout with edit btn -->
+
+<div class="row">
+  <div class="LeftColumn">
+    <div class="OutputNewsMask">
+      <h2>TITLE HEADING</h2>
+      <div class="LeftBlock">
+        <button class="EditBtn">Edit</button>
+      </div>
+      <h5>Title description, Dec 7, 2017</h5> <!-- here is the create date displayed -->
+      <div class="NewsInput">News Input text...bla bla bla </br>
+        gfjhgfkjgfgfisgg..dfg.a.gfadf.</div> <!-- News text -->
+      <div class="LeftBlock">
+        <button class="DeleteBtn">Delete</button> <!-- delete btn to delete news -->
+      </div>
+    </div>
+
+  </div>
+
+  <!--From here down is the right side aka the second mask
+  used for input -->
+
+  <div class="RightColumn">
+    <div class="InputNewsMask">
+      <h2>InputNewsMask</h2>
+    <div class="NewsHeaderInput-text">
+      <input class="NewsHeaderInput-text" type="text" placeholder="NewsHeader">
+    </div>
+  </br>
+      <div class="InputNewsDate">
+      <label for="InputNewsDate">News Date:</label>
+  <input type="date" id="InputNewsDate" name="NewsDate">
+  </div>
+    </div>
+    <div class="NewsTextInput">
+      <textarea class="NewsInput-textarea" placeholder="NewsTextInput...lorem ipsum bla bla bla..dfgfasag
+      agfag
+      gaga"></textarea>
+      <h3>NewsText</h3>
+      <div class="NewsTextInput">NewsTextInput...lorem ipsum bla bla bla..</div><br>
+    </div>
+    <div class="SaveInputText"> <!--here make a Save button-->
+      <div class="RightBlock">
+        <button class="SaveBtn">Save</button>
+      </div>
+    </div>
+    <div class="CancelInputText"></div>
+    <div class="RightBlock">
+      <button class="CancelBtn">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+</body>
+</html>
