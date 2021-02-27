@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+
+}
+
+/* Create two equal columns next to each other */
+.leftColumn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  /*height: 300px; !! Only demonstration */
+}
+.rightColumn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  color: Blue;
+  /*height: 300px; !! Only demonstration */
+}
+
+/* Clear floats after columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Responsive layout - makes the RightColumn stack on top of LeftColumn  */
+@media screen and (max-width: 600px) {
+  .rightColumn {
+    width: 100%;
+  }
+button:hover {
+    color: blue;
+}
+}
