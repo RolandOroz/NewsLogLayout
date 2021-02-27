@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD -->
+<head>
+  <title>News Log Layout</title> <!-- Name the News app -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!--html will be maximum compatible with older browsers.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--display types-->
+  <link rel="stylesheet" type ="text/css" href="2ColumnLayoutLess600pxOnTop.css" media="screen"/> <!--default style sheet e.g. CSS-->
+  <link rel="alternate stylesheet" title="" href="">  <!--alternative style sheet (can be many)-->
+  <!--bgn******************************preconnect & dns-prefetch exmpl****************************************************-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <!--This process includes DNS resolution, as well as-->
+  <!--establishing the TCP connection, and performing-->
+  <!--the TLS handshake—if served over HTTPS.-->
+  <!--Combining the two provides an opportunity to -->
+  <!--reduce latency of cross-origin requests.-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <!--******************************preconnect & dns-prefetch exmpl************************************************end-->
+</head>
+
+<body>
+<header class="headerMenu" title="newsLogMenu">
+  <h1 id="newsLogName">News log Name</h1>
+  <nav>
+      <ul>
+          <li>Menu item</li>
+          <li>Menu item</li>
+          <li>Menu item</li>
+      </ul>
+  </nav>
+</header>
+<!--**************************!!!!!!!!!!!!***********************************-->
+<!--MAKE CHANGES FROM HER DOWN!!!!!!!!!!!!-->
+<!--CHANGE THE CSS FILE "2ColumnLayoutLess600pxOnTop.css" ************-->
+
+<!-- From here is the News layout with edit & delete btn  -->
+<div class="row">
+  <div class="leftColumn">
+    <div class="outputNewsMask">
+      <h2 id="newsTitle">NEWS TITEL</h2>
+      <div class="leftBlock">
+        <button class="editBtn">Edit</button>
+      </div>
+      <article>
+      <h5 id="newsTitelAndDate">Title description, Dec 7, 2017</h5> <!-- here is the create date displayed -->
+      <div class="newsInput">News Input text...bla bla bla <br>
+        gfjhgfkjgfgfisgg..dfg.a.gfadf.
+      </div> <!-- News text -->
+      </article>
+      <div class="leftBlock">
+        <button class="deleteBtn" id="deleteNews">Delete</button> <!-- delete btn to delete news -->
+      </div>
+    </div>
+</div>
+
+
+  <!--From here down is the right side aka the second mask
+  used for input -->
+
+  <div class="rightColumn">
+    <div class="inputNewsMask">
+      <h2>InputNewsMask</h2>
+    <div class="newsHeaderInput-text">
+      <input class="newsHeaderInput-text" type="text" placeholder="News Title">
+    </div>
+  <br>
+      <div class="inputNewsDate">
+      <label for="inputNewsDate">News Date:</label>
+  <input type="date" id="inputNewsDate" name="NewsDate">
+  </div>
+    </div>
+    <div class="newsTextInput">
+      <textarea class="newsInput-textarea" placeholder="NewsTextInput...lorem ipsum bla bla bla..dfgfasag
+      agfag
+      gaga"></textarea>
+      <h3>NewsText</h3>
+      <div class="newsTextInput">NewsTextInput...lorem ipsum bla bla bla..</div><br>
+    </div>
+    <div class="saveInputText"> <!--here make a Save button-->
+      <div class="rightBlock">
+        <button class="saveBtn">Save</button>
+      </div>
+    </div>
+    <div class="cancelInputText"></div>
+    <div class="rightBlock">
+      <button class="cancelBtn">Cancel</button>
+    </div>
+  </div>
+</div>
+
+</body>
+<footer class="footer">
+    <small id="companyFooter" rel="license">Company: D13&copy;. All rights reserved.</small>
+</footer>
+</html>

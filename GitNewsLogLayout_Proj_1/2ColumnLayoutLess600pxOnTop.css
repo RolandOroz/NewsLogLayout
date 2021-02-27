@@ -1,19 +1,21 @@
 * {
   box-sizing: border-box;
+
 }
 
 /* Create two equal columns next to each other */
-.LeftColumn {
+.leftColumn {
   float: left;
   width: 50%;
   padding: 10px;
-  /*height: 300px;  Only demonstration */
+  /*height: 300px; !! Only demonstration */
 }
-.RightColumn {
+.rightColumn {
   float: left;
   width: 50%;
   padding: 10px;
-  /*height: 300px;  Only demonstration */
+  color: Blue;
+  /*height: 300px; !! Only demonstration */
 }
 
 /* Clear floats after columns */
@@ -26,7 +28,10 @@
 
 /* Responsive layout - makes the RightColumn stack on top of LeftColumn  */
 @media screen and (max-width: 600px) {
-  .RightColumn {
+  .rightColumn {
     width: 100%;
   }
+button:hover {
+    color: blue;
+}
 }
