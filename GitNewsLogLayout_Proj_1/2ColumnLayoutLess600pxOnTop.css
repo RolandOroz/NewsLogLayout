@@ -19,7 +19,7 @@
 }
 
 /* Clear floats after columns */
-.row:after {
+.columnSide:after {
   content: "";
   display: table;
   clear: both;
