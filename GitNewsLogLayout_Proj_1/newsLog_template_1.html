@@ -23,7 +23,7 @@
 <body>
 <header class="headerMenu" title="newsLogMenu">
   <h1 id="newsLogName">News log Name</h1>
-  <nav>
+  <nav class="headerMenuItems">
       <ul>
           <li>Menu item</li>
           <li>Menu item</li>
@@ -39,16 +39,27 @@
 <div class="columnSide">
   <div class="leftColumn">
     <div class="outputNewsMask">
-      <h2 id="newsTitle">NEWS TITEL</h2>
+      <h2 id="newsTitle"><a href="https://www.sciencenews.org/article/sun-solar-storms-earth-havoc-space-weather-forecasts">Solar storms can wreak havoc</a></h2>
       <div class="leftBlock">
         <button class="editBtn">Edit</button>
       </div>
-      <article>
-      <h5 id="newsTitelAndDate">Title description, Dec 7, 2017</h5> <!-- here is the create date displayed -->
-      <div class="newsInput">News Input text...bla bla bla <br>
-        gfjhgfkjgfgfisgg..dfg.a.gfadf.
-      </div> <!-- News text -->
-      </article>
+
+      <h5 id="newsTitelAndDate"><a href="https://www.sciencenews.org/topic/space">SPACE</a></h5>
+          <p class="publishDate">
+            <time class="entryDate" datetime="01-03-2021">01.03.2021</time>
+          </p> <!-- here is the published date displayed -->
+      <article class="newsInput">
+      Since December 2019, the sun has been moving into a busier part of its cycle, when increasingly
+        intense pulses of energy can shoot out in all directions. Some of these large bursts of charged particles head right
+        toward Earth. Without a good way to anticipate these solar storms, we’re vulnerable. A big one could take out a swath
+        of our communication systems and power grids before we even knew what hit us.
+
+        A recent near miss occurred in the summer of 2012. A giant solar storm hurled a radiation-packed blob in Earth’s
+        direction at more than 9 million kilometers per hour. The potentially debilitating burst quickly traversed the nearly
+        150 million kilometers toward our planet, and would have hit Earth had it come just a week earlier. Scientists learned
+        about it after the fact, only because it struck a NASA satellite designed to watch for this kind of space weather.
+      </article> <!-- News text -->
+
       <div class="leftBlock">
         <button class="deleteBtn" id="deleteNews">Delete</button> <!-- delete btn to delete news -->
       </div>
