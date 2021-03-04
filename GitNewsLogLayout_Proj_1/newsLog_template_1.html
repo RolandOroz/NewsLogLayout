@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"><!--display types-->
   <link rel="stylesheet" type ="text/css" href="2ColumnLayoutLess600pxOnTop.css" media="screen"/> <!--default style sheet e.g. CSS-->
   <link rel="alternate stylesheet" title="" href="">  <!--alternative style sheet (can be many)-->
-  <!--bgn******************************preconnect & dns-prefetch exmpl****************************************************-->
+  <!--bgn******************************preconnect & dns-prefetch exmpl************************************************-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <!--This process includes DNS resolution, as well as-->
@@ -40,16 +40,18 @@
   <div class="leftColumn">
     <div class="outputNewsMask">
       <h2 id="newsTitle"><a href="https://www.sciencenews.org/article/sun-solar-storms-earth-havoc-space-weather-forecasts">Solar storms can wreak havoc</a></h2>
+
       <div class="leftBlock">
         <button class="editBtn">Edit</button>
       </div>
 
       <h5 id="newsTitelAndDate"><a href="https://www.sciencenews.org/topic/space">SPACE</a></h5>
-          <p class="publishDate">
+          <div class="publishDate">
             <time class="entryDate" datetime="01-03-2021">01.03.2021</time>
-          </p> <!-- here is the published date displayed -->
+          </div> <!-- here is the published date displayed -->
+
       <article class="newsInput">
-      Since December 2019, the sun has been moving into a busier part of its cycle, when increasingly
+        Since December 2019, the sun has been moving into a busier part of its cycle, when increasingly
         intense pulses of energy can shoot out in all directions. Some of these large bursts of charged particles head right
         toward Earth. Without a good way to anticipate these solar storms, we’re vulnerable. A big one could take out a swath
         of our communication systems and power grids before we even knew what hit us.
@@ -60,46 +62,54 @@
         about it after the fact, only because it struck a NASA satellite designed to watch for this kind of space weather.
       </article> <!-- News text -->
 
-      <div class="leftBlock">
-        <button class="deleteBtn" id="deleteNews">Delete</button> <!-- delete btn to delete news -->
-      </div>
+        <div class="leftBlock">
+          <button class="deleteBtn" id="deleteNews">Delete</button> <!-- delete btn to delete news -->
+        </div>
+
     </div>
-</div>
+  </div>
+
 
 
   <!--From here down is the right side aka the second mask
   used for input -->
-<div class="columnSide">
-  <div class="rightColumn">
-    <div class="inputNewsMask">
-      <h2>InputNewsMask</h2>
-    <div class="newsHeaderInput-text">
-      <input class="newsHeaderInput-text" type="text" placeholder="News Title">
-    </div>
+
+   <div class="rightColumn">
+     <div class="inputNewsMask">
+        <h2>InputNewsMask</h2>
+
+        <form>
+          <div class="newsHeaderInput-text">
+            <input class="newsHeaderInput-text" type="text" placeholder="News Title">
+          </div>
   <br>
-      <div class="inputNewsDate">
-      <label for="inputNewsDate">News Date:</label>
-  <input type="date" id="inputNewsDate" name="NewsDate">
+          <div class="inputNewsDate">
+            <label for="inputNewsDate">News Date:</label>
+            <input type="date" id="inputNewsDate" name="NewsDate">
+          </div>
+
+          <div class="newsTextInput">
+            <textarea class="newsInput-textarea" placeholder="News Text Input..."></textarea>
+  <br>
+
+            <div class="saveInputText"> <!--here make a Save button-->
+            </div>
+
+            <div class="rightBlock">
+              <button class="saveBtn">Save</button>
+            </div>
+
+          </div>
+          <div class="cancelInputText">
+          </div>
+
+          <div class="rightBlock">
+            <button class="cancelBtn">Cancel</button>
+          </div>
+        </form>
+
+    </div>
   </div>
-    </div>
-    <div class="newsTextInput">
-      <textarea class="newsInput-textarea" placeholder="NewsTextInput...lorem ipsum bla bla bla..dfgfasag
-      agfag
-      gaga"></textarea>
-      <h3>NewsText</h3>
-      <div class="newsTextInput">NewsTextInput...lorem ipsum bla bla bla..</div><br>
-    </div>
-    <div class="saveInputText"> <!--here make a Save button-->
-      <div class="rightBlock">
-        <button class="saveBtn">Save</button>
-      </div>
-    </div>
-    <div class="cancelInputText"></div>
-    <div class="rightBlock">
-      <button class="cancelBtn">Cancel</button>
-    </div>
-  </div>
-</div>
 </div>
 
 </body>

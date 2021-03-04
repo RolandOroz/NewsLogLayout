@@ -4,6 +4,7 @@
 }
 
 /* Create two equal columns next to each other */
+
 .leftColumn {
   float: left;
   width: 50%;
